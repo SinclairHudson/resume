@@ -32,7 +32,7 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\maintitle{Sinclair Hudson}{University of Toronto MSc of Applied Computing, class of 2025}  % Your name and date of birth or subtitle
+\maintitle{Sinclair Hudson}{University of Toronto MSc of Applied Computing, graduating Dec 2024}
 
 \noindent\href{mailto:sinclair.hudson@mail.utoronto.ca}{sinclair.hudson@mail.utoronto.ca}\bull % Your email address
 \textsmaller{+}1 (519) 694-0104 \bull % Your phone number(s) and Skype username
@@ -49,11 +49,10 @@
 {\textsc{}} {
 \headedsubsection % Job title entry for the current employer
 {Master's of Science in Applied Computing, Artificial Intelligence Concentration}
-{Sept '23 -- Dec '25 (expected)}
+{Sept '23 -- Dec '24 (expected)}
 {\bodytext{
 \begin{itemize}
     \item \href{https://vectorinstitute.ai/programs/scholarship/}{Vector Scholarship in Artificial Intelligence}, worth \$17 500 CAD.
-%\item Six 4-month co-op placements at six distinct companies
 \end{itemize}
 
 }}
@@ -69,6 +68,7 @@
 \begin{itemize}
 \item 91.26 cumulative GPA, 93.50 major average
 \item President's Research Award, President's International Experience Award
+\item Courses in computer vision, autonomous vehicles, and machine learning
 %\item Six 4-month co-op placements at six distinct companies
 \end{itemize}
 
@@ -99,10 +99,10 @@
 {April 2021}
 {\bodytext{
 \begin{itemize}
-\item Authored a research paper and presented it at the \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11756/117560C/Application-of-machine-learning-for-drone-classification-using-radars/10.1117/12.2588694.short?SSO=1}{SPIE 2021 Conference}, with a follow-up \href{https://www.mdpi.com/2504-446X/5/4/149}{peer-reviewed paper}.
-% \item Came 1st place in the \href{https://github.com/SinclairHudson/CANSOFCOM}{Hack The North 2020++ CANSOFCOM Drone ML challenge}.
 \item Used a convolutional neural network to classify 5 different commercial drones based on a Fourier transform of their noisy RADAR return signal.
+\item Authored a research paper and presented it at the \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11756/117560C/Application-of-machine-learning-for-drone-classification-using-radars/10.1117/12.2588694.short?SSO=1}{SPIE 2021 Conference}, with a follow-up \href{https://www.mdpi.com/2504-446X/5/4/149}{peer-reviewed paper}.
 \item Created a detailed physics-based simulation of RADAR returns bouncing off of a drone in flight, and used the simulated data to validate classification methods.
+\item Came 1st place in the \href{https://github.com/SinclairHudson/CANSOFCOM}{Hack The North 2020++ CANSOFCOM Drone ML challenge}.
 \end{itemize}
 }}
 
@@ -118,13 +118,16 @@
 {\href{http://www.getcruise.com}{Cruise}}
 {\textsc{San Francisco, CA}} {
 \headedsubsection % Job title entry for the current employer
-{Deep Learning Performance Engineer}
+{Model Deployment Platform Engineer}
 {Sept '22 -- Dec '22}
 {\bodytext{
 \begin{itemize}
-\item Developed various Python tools to deploy deep learning models on the vehicle, using \href{https://onnx.ai/}{ONNX}, \href{https://developer.nvidia.com/tensorrt}{TensorRT}, and custom computation graph representations.
-\item Built a tool to assess numerical divergence between the original PyTorch models and optimized models.
-\item Built a linter to map ONNX nodes to lines in PyTorch source code, saving model deployment engineers hours.
+%\item Developed various Python tools to deploy deep learning models on the vehicle, using \href{https://onnx.ai/}{ONNX},
+   % \href{https://developer.nvidia.com/tensorrt}{TensorRT}, and custom computation graph representations.
+\item Developed a set of debugging tools to assist in model deployment, reducing deployment time by days in some cases.
+\item Built a tool to automatically assess numerical divergence between the original PyTorch models and optimized models\
+    using \href{https://developer.nvidia.com/tensorrt}{TensorRT} and custom computation graph representations.
+\item Built a linter to map \href{https://onnx.ai/}{ONNX} nodes to lines in PyTorch source code, saving model deployment engineers hours.
 \item Created a tool to manually add outputs to exported ONNX graphs, allowing engineers to inspect intermediate activations while debugging models.
 \end{itemize}
 
@@ -135,13 +138,14 @@
 {\href{http://www.nvidia.com}{NVIDIA}}
 {\textsc{Santa Clara, CA (remote)}} {
 \headedsubsection % Job title entry for the current employer
-{Deep Learning Research for Autonomous Vehicles}
+{Deep Learning Researcher for Autonomous Vehicles}
 {Jan '22 -- Apr '22}
 {\bodytext{
 \begin{itemize}
 \item Designed and iterated on multiple experiments for a LiDAR object detection neural network, improving cyclist and pedestrian F-scores by 43\% and 15\%, respectively. 
 \item Implemented sparse tensor object detectors using \href{https://github.com/NVIDIA/MinkowskiEngine}{Minkowski Engine}, outperforming the baseline model while using 70\% less memory.
 \item Integrated confidence predictions into a LiDAR object detection auto-labeling pipeline, allowing human annotators to focus efforts on anomalous and challenging data instances.
+\item Used internal tools to deploy and monitor experiments on a GPU cluster.
 \end{itemize}
 
 }}
@@ -156,10 +160,10 @@
 {May '21 -- Aug '21}
 {\bodytext{
 \begin{itemize}
-\item Built and tested defect detection deep learning solutions for clients in the manufacturing industry, focusing on defect detection.
-\item Implemented the core functionality of Dataset Distillation using the autograd package, to pursue research in low-data machine learning contexts.
+\item Built and tested defect detection deep learning solutions for clients in the manufacturing industry.
 \item Trained XGBoost and SVR systems to model the relationship between environmental conditions and yield for an agriculture client, achieving 11\% median error by weight.
-\item Created an anomaly detection research repository in PyTorch, for detecting anomalies in images.
+\item Implemented the core functionality of Dataset Distillation using the autograd package, to pursue research in low-data machine learning contexts.
+\item Designed and created an anomaly detection research repository in PyTorch, for interal research detecting anomalies in images.
 \item Implemented VAE, VQ-VAE, and VQ-VAE-2 from scratch in PyTorch, evaluating each autoencoder as an anomaly detector.
 \end{itemize}
 
@@ -176,7 +180,8 @@
 {\bodytext{
 \begin{itemize}
 \item Built a customer-facing Python API to optimize, format and quantize TensorFlow computation graphs.
-\item Designed and implemented Non-Max Suppression for quantized values using only integer operations, allowing Single-Shot Detector pipelines to be run on-chip.
+\item Designed and implemented Non-Max Suppression for quantized values using only integer operations, allowing
+    single-shot detector pipelines to run on-chip.
 \item Experimented with different quantization schemes to improve the mAP of an SSD-ResNet-34 by 5\%.
  \item Implemented a lookup table class to represent arbitrary non-linear functions in a quantized space.
  \end{itemize}
