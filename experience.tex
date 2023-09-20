@@ -15,9 +15,9 @@
 %\item Developed various Python tools to deploy deep learning models on the vehicle, using \href{https://onnx.ai/}{ONNX},
    % \href{https://developer.nvidia.com/tensorrt}{TensorRT}, and custom computation graph representations.
 \item Developed debugging tools to assist in model deployment, reducing deployment time by days in some cases.
-\item Built a tool to automatically assess numerical divergence between the original PyTorch models and optimized models\
-    using \href{https://developer.nvidia.com/tensorrt}{TensorRT} and custom computation graph representations.
-\item Built a linter to map \href{https://onnx.ai/}{ONNX} nodes to lines in PyTorch source code, saving model deployment engineers hours.
+\item Built a tool to automatically assess numerical divergence between the original PyTorch models and optimized 
+    \href{https://developer.nvidia.com/tensorrt}{TensorRT} models, allowing deployment engineers to quickly identify optimization errors.
+\item Built a linter to map \href{https://onnx.ai/}{ONNX} nodes to lines in PyTorch source code, saving deployment engineers hours of manual debugging every deployment.
 \item Created a tool to manually add outputs to exported ONNX graphs, allowing engineers to inspect intermediate activations while debugging models.
 \end{itemize}
 
@@ -32,10 +32,10 @@
 {Jan '22 -- Apr '22}
 {\bodytext{
 \begin{itemize}
-\item Designed and iterated on multiple experiments for a LiDAR object detection neural network, improving cyclist and pedestrian F-scores by 43\% and 15\%, respectively. 
+\item Designed and iterated on multiple experiments for a LiDAR object detection neural network, improving cyclist and pedestrian detections by 43\% and 15\%, respectively. 
 \item Implemented sparse tensor object detectors using \href{https://github.com/NVIDIA/MinkowskiEngine}{Minkowski Engine}, outperforming the baseline model while using 70\% less memory.
+\item Presented a 30-minute research overview to the organization, summarizing research findings of the whole term.
 \item Integrated confidence predictions into a LiDAR object detection auto-labeling pipeline, allowing human annotators to focus efforts on anomalous and challenging data instances.
-\item Presented work... at the end .. TODO
 %\item Used internal tools to deploy and monitor experiments on a GPU cluster.
 \end{itemize}
 
@@ -52,10 +52,12 @@
 {\bodytext{
 \begin{itemize}
 \item Built and tested defect detection deep learning solutions for clients in the manufacturing industry.
-\item Trained XGBoost and SVR systems to model the relationship between environmental conditions and yield for an agriculture client, achieving 11\% median error by weight.
+\item Trained XGBoost and SVR systems to model the relationship between environmental conditions and yield for an agriculture client,
+    giving the client insight into the impact of environmental conditions on their yield.
 \item Implemented the core functionality of Dataset Distillation using the autograd package, to pursue research in low-data machine learning contexts.
 %\item Designed and created an anomaly detection research repository in PyTorch, for internal research detecting anomalies in images.
-\item Implemented VAE, VQ-VAE, and VQ-VAE-2 from scratch in PyTorch, evaluating each autoencoder as an anomaly detector.
+\item Implemented VAE, VQ-VAE, and VQ-VAE-2 from scratch in PyTorch, demonstrating the 
+    effectiveness of autoencoders as anomaly detectors on client datasets.
 \end{itemize}
 
 }}
@@ -70,11 +72,12 @@
 {Sept '20 -- Dec '20}
 {\bodytext{
 \begin{itemize}
-\item Built a customer-facing Python API to optimize, format and quantize TensorFlow computation graphs.
+\item Contributed to a customer-facing Python library to quantize and optimize TensorFlow computation graphs.
 \item Designed and implemented Non-Max Suppression for quantized values using only integer operations, allowing
-    single-shot detector pipelines to run on-chip. TODO speedup 10x
+    object detection pipelines to run 10x faster on-chip.
 \item Experimented with different quantization schemes to improve the mAP of an SSD-ResNet-34 by 5\%.
- \item Implemented a lookup table class to represent arbitrary non-linear functions in a quantized space.
+ \item Implemented a lookup table class to represent arbitrary non-linear functions in a quantized space, 
+     allowing the python library to support any activation function.
  \end{itemize}
 
  }}
@@ -90,9 +93,10 @@
 {\bodytext{
 \begin{itemize}
     \item Implemented key modules from 12 different research papers in PyTorch, summarizing state-of-the-art techniques and enabling further research. 
-    \item Built DBLiDARNet and focal loss from scratch in PyTorch to use in semantic segmentation experiments.
-    \item Analysed the SemanticKITTI dataset to produce optimal class loss weights, increasing mIoU by 2\%.
-    \item Wrote a data loader to spatially align sequential LiDAR scans for temporal pipelines, based on IMU data.
+    %\item Built DBLiDARNet and focal loss from scratch in PyTorch to use in semantic segmentation experiments.
+    \item Analysed the SemanticKITTI dataset to produce optimal class loss weights, boosting mIoU by 2\%.
+    \item Wrote a data loader to spatially align sequential LiDAR scans for temporal pipelines, based on IMU data, enabling
+        the research of multi-scan LiDAR segmentation pipelines.
     \end{itemize}
     
     }}
