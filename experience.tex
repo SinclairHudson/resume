@@ -1,0 +1,108 @@
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Relevant Work Experience} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.getcruise.com}{Cruise}}
+{\textsc{San Francisco, CA}} {
+\headedsubsection % Job title entry for the current employer
+{Model Deployment Platform Engineer}
+{Sept '22 -- Dec '22}
+{\bodytext{
+\begin{itemize}
+%\item Developed various Python tools to deploy deep learning models on the vehicle, using \href{https://onnx.ai/}{ONNX},
+   % \href{https://developer.nvidia.com/tensorrt}{TensorRT}, and custom computation graph representations.
+\item Developed debugging tools to assist in model deployment, reducing deployment time by days in some cases.
+\item Built a tool to automatically assess numerical divergence between the original PyTorch models and optimized 
+    \href{https://developer.nvidia.com/tensorrt}{TensorRT} models, allowing deployment engineers to quickly identify optimization errors.
+\item Built a linter to map \href{https://onnx.ai/}{ONNX} nodes to lines in PyTorch source code, saving deployment engineers hours of manual debugging every deployment.
+\item Created a tool to manually add outputs to exported ONNX graphs, allowing engineers to inspect intermediate activations while debugging models.
+\end{itemize}
+
+}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.nvidia.com}{NVIDIA}}
+{\textsc{Santa Clara, CA (remote)}} {
+\headedsubsection % Job title entry for the current employer
+{Deep Learning Researcher for Autonomous Vehicles}
+{Jan '22 -- Apr '22}
+{\bodytext{
+\begin{itemize}
+\item Designed and iterated on multiple experiments for a LiDAR object detection neural network, improving cyclist and pedestrian detections by 43\% and 15\%, respectively. 
+\item Implemented sparse tensor object detectors using \href{https://github.com/NVIDIA/MinkowskiEngine}{Minkowski Engine}, outperforming the baseline model while using 70\% less memory.
+\item Presented a 30-minute research overview to the organization, summarizing research findings of the whole term.
+\item Integrated confidence predictions into a LiDAR object detection auto-labeling pipeline, allowing human annotators to focus efforts on anomalous and challenging data instances.
+%\item Used internal tools to deploy and monitor experiments on a GPU cluster.
+\end{itemize}
+
+}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{https://darwinai.com/}{DarwinAI}}
+{\textsc{Waterloo, ON (remote)}} {
+
+\headedsubsection % Job title entry for the current employer
+{Machine Learning Developer}
+{May '21 -- Aug '21}
+{\bodytext{
+\begin{itemize}
+\item Built and tested defect detection deep learning solutions for clients in the manufacturing industry.
+\item Trained XGBoost and SVR systems to model the relationship between environmental conditions and yield for an agriculture client,
+    giving the client insight into the impact of environmental conditions on their yield.
+\item Implemented the core functionality of Dataset Distillation using the autograd package, to pursue research in low-data machine learning contexts.
+%\item Designed and created an anomaly detection research repository in PyTorch, for internal research detecting anomalies in images.
+\item Implemented VAE, VQ-VAE, and VQ-VAE-2 from scratch in PyTorch, demonstrating the 
+    effectiveness of autoencoders as anomaly detectors on client datasets.
+\end{itemize}
+
+}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+ {\href{https://www.untether.ai/}{Untether AI}}
+ {\textsc{Toronto, ON (remote)}} {
+
+\headedsubsection % Job title entry for the current employer
+{Software Developer}
+{Sept '20 -- Dec '20}
+{\bodytext{
+\begin{itemize}
+\item Contributed to a customer-facing Python library to quantize and optimize TensorFlow computation graphs.
+\item Designed and implemented Non-Max Suppression for quantized values using only integer operations, allowing
+    object detection pipelines to run 10x faster on-chip.
+\item Experimented with different quantization schemes to improve the mAP of an SSD-ResNet-34 by 5\%.
+ \item Implemented a lookup table class to represent arbitrary non-linear functions in a quantized space, 
+     allowing the python library to support any activation function.
+ \end{itemize}
+
+ }}
+ }
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://dev3.noahlab.com.hk/about.html}{Huawei}}
+{\textsc{Markham, ON}} {
+
+\headedsubsection % Job title entry for the current employer
+{LiDAR Perception Researcher}
+{Jan '20 -- Apr '20}
+{\bodytext{
+\begin{itemize}
+    \item Implemented key modules from 12 different research papers in PyTorch, summarizing state-of-the-art techniques and enabling further research. 
+    %\item Built DBLiDARNet and focal loss from scratch in PyTorch to use in semantic segmentation experiments.
+    \item Analysed the SemanticKITTI dataset to produce optimal class loss weights, boosting mIoU by 2\%.
+    \item Wrote a data loader to spatially align sequential LiDAR scans for temporal pipelines, based on IMU data, enabling
+        the research of multi-scan LiDAR segmentation pipelines.
+    \end{itemize}
+    
+    }}
+    }
+%------------------------------------------------
+
+ \begin{center}
+\textit{Please refer to \href{https://www.linkedin.com/in/sinclairhudson/}{my Linkedin profile} for a complete list of work experiences.}
+\end{center}

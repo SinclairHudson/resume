@@ -20,6 +20,9 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+% look at researcher job holders and their resumes
+% presentation section?
+
 \documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
 
 \include{structure} % Include structure.tex which contains packages and document layout definitions
@@ -32,175 +35,27 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\maintitle{Sinclair Hudson}{University of Waterloo Computer Science, class of 2023}  % Your name and date of birth or subtitle
+\maintitle{Sinclair Hudson}{University of Toronto MSc of Applied Computing}
 
-\noindent\href{mailto:sshudson@uwaterloo.ca}{sshudson@uwaterloo.ca}\bull % Your email address
+\noindent\href{mailto:sinclair.hudson@mail.utoronto.ca}{sinclair.hudson@mail.utoronto.ca}\bull % Your email address
 \textsmaller{+}1 (519) 694-0104 \bull % Your phone number(s) and Skype username
-% \textsmaller{+}1 (628) 777-8349 \bull % Your phone number(s) and Skype username
 \href{http://www.sinclairhudson.com}{sinclairhudson.com} \bull
 \href{https://github.com/SinclairHudson}{GitHub: SinclairHudson}
-% 123 Broadway\bull City, 12345\bull State\bull Country % Your address
 
 \spacedhrule{0.4em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-\roottitle{Education} % Top level section
 
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{\href{http://www.getcruise.com}{University of Waterloo}}
-{\textsc{}} {
-\headedsubsection % Job title entry for the current employer
-{Bachelor of Computer Science, Honours, Co-operative Program, AI Specialization}
-{Sept '18 -- Apr '23 (expected)}
-{\bodytext{
-\begin{itemize}
-\item 91.26 cumulative GPA, 93.50 major average
-\item President's Research Award, President's International Experience Award
-\item Six 4-month co-op placements at six distinct companies
-\end{itemize}
-
-}}
-}
-\spacedhrule{0.4em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-
-    \roottitle{\href{https://scholar.google.ca/citations?user=YK20kOEAAAAJ&hl=en&oi=sra}{Publications}} % Top level section
-    
-    {
-{
-\headedsubsection % Job title entry for the current employer
-{\href{https://arxiv.org/abs/2202.07133}{Sim-to-Real Domain Adaptation for Lane Detection and Classification in Autonomous Driving}}
-{June 2022}
-{\bodytext{
-\begin{itemize}
-\item Co-Authored a peer-reviewed \href{https://arxiv.org/abs/2202.07133}{research paper} on sim2real lane detection using the \href{https://carla.org/}{CARLA} simulator, integrating current GAN research with state-of-the-art lane detection models. 
-\item Presented the paper at a poster board session during the \href{https://iv2022.com/}{Intelligent Vehicles 2022 symposium}.
-% \item Deployed a lane detection model into the production C++ stack, using ROS and Intel OpenVINO, increasing model throughput by 200\%.
-% \item Trained and deployed multiple computer vision models for autonomous vehicles, including a a YOLOv3 model for traffic light detection and an EfficientNet-based segmentation model for roadline detection.
-\end{itemize}
-}
-}}
-
-\headedsubsection
-{\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11756/117560C/Application-of-machine-learning-for-drone-classification-using-radars/10.1117/12.2588694.short?SSO=1}
-{Application of machine learning for drone classification using radars}}
-{April 2021}
-{\bodytext{
-\begin{itemize}
-\item Authored a research paper and presented it at the \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11756/117560C/Application-of-machine-learning-for-drone-classification-using-radars/10.1117/12.2588694.short?SSO=1}{SPIE 2021 Conference}, with a follow-up \href{https://www.mdpi.com/2504-446X/5/4/149}{peer-reviewed paper}.
-% \item Came 1st place in the \href{https://github.com/SinclairHudson/CANSOFCOM}{Hack The North 2020++ CANSOFCOM Drone ML challenge}.
-\item Used a convolutional neural network to classify 5 different commercial drones based on a Fourier transform of their noisy RADAR return signal.
-\end{itemize}
-}}
+\input{education}
 
 \spacedhrule{1.4em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+\input{publications}
 
-\roottitle{Experience} % Top level section
+\spacedhrule{1.4em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{\href{http://www.getcruise.com}{Cruise}}
-{\textsc{San Francisco, CA}} {
-\headedsubsection % Job title entry for the current employer
-{Deep Learning Performance Engineer}
-{Sept '22 -- Dec '22}
-{\bodytext{
-\begin{itemize}
-\item Developed various Python tools to deploy deep learning models on the vehicle, using \href{https://onnx.ai/}{ONNX}, \href{https://developer.nvidia.com/tensorrt}{TensorRT}, and custom computation graph representations.
-\item Built a tool to assess numerical divergence between the original PyTorch models and optimized models.
-\item Built a linter to map ONNX nodes to lines in PyTorch source code, saving model deployment engineers hours.
-\item Created a tool to manually add outputs to exported ONNX graphs, allowing engineers to inspect intermediate activations while debugging models.
-\end{itemize}
+\input{experience}
 
-}}
-}
+\spacedhrule{0.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{\href{http://www.nvidia.com}{NVIDIA}}
-{\textsc{Santa Clara, CA (remote)}} {
-\headedsubsection % Job title entry for the current employer
-{Deep Learning Research for Autonomous Vehicles}
-{Jan '22 -- Apr '22}
-{\bodytext{
-\begin{itemize}
-\item Designed and iterated on multiple experiments for a LiDAR object detection neural network, improving cyclist and pedestrian F-scores by 43\% and 15\%, respectively. 
-\item Implemented sparse tensor object detectors using \href{https://github.com/NVIDIA/MinkowskiEngine}{Minkowski Engine}, outperforming the baseline model while using 70\% less memory.
-\item Integrated confidence predictions into a LiDAR object detection auto-labeling pipeline, allowing human annotators to focus efforts on anomalous and challenging data instances.
-\end{itemize}
-
-}}
-}
-
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{\href{https://darwinai.com/}{DarwinAI}}
-{\textsc{Waterloo, ON (remote)}} {
-
-\headedsubsection % Job title entry for the current employer
-{Machine Learning Developer}
-{May '21 -- Aug '21}
-{\bodytext{
-\begin{itemize}
-\item Built and tested defect detection deep learning solutions for clients in the manufacturing industry, focusing on defect detection.
-\item Implemented the core functionality of Dataset Distillation using the autograd package, to pursue research in low-data machine learning contexts.
-\item Trained XGBoost and SVR systems to model the relationship between environmental conditions and yield for an agriculture client, achieving 11\% median error by weight.
-\item Created an anomaly detection research repository in PyTorch, for detecting anomalies in images.
-\item Implemented VAE, VQ-VAE, and VQ-VAE-2 from scratch in PyTorch, evaluating each autoencoder as an anomaly detector.
-\end{itemize}
-
-}}
-}
-
-%\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
- %{\href{https://www.untether.ai/}{Untether AI}}
- %{\textsc{Toronto, ON (remote)}} {
-
-%\headedsubsection % Job title entry for the current employer
-%{Software Developer}
-%{Sept '20 -- Dec '20}
-%{\bodytext{
-%\begin{itemize}
-%\item Built a customer-facing Python API to optimize, format and quantize TensorFlow computation graphs.
-%\item Designed and implemented Non-Max Suppression for quantized values using only integer operations, allowing Single-Shot Detector pipelines to be run on-chip.
-%\item Experimented with different quantization schemes to improve the mAP of an SSD-ResNet-34 by 5\%.
- %\item Implemented a lookup table class to represent arbitrary non-linear functions in a quantized space.
- %\end{itemize}
-
- %}}
- %}
-
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{\href{http://dev3.noahlab.com.hk/about.html}{Huawei}}
-{\textsc{Markham, ON}} {
-
-\headedsubsection % Job title entry for the current employer
-{LiDAR Perception Researcher}
-{Jan '20 -- Apr '20}
-{\bodytext{
-\begin{itemize}
-    \item Built DBLiDARNet and focal loss from scratch in PyTorch to use in semantic segmentation experiments.
-    \item Implemented key modules from 12 different research papers in PyTorch, summarizing state-of-the-art techniques and enabling further research. 
-%----------------------------------------------------------------------------------------
-    \item Analysed the SemanticKITTI dataset to produce optimal class loss weights, increasing mIoU by 2\%.
-    \item Wrote a data loader to spatially align sequential LiDAR scans for temporal pipelines, based on IMU data.
-    \end{itemize}
-    
-    }}
-    }
-    %------------------------------------------------
-    
-     %\begin{center}
-    %\textit{Please refer to \href{https://www.linkedin.com/in/sinclairhudson/}{my Linkedin profile} for the complete list of work experiences.}
-    %\end{center}
-    
-    %------------------------------------------------
-    
-    \spacedhrule{0.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-
-\roottitle{Skills} % Top level section
-
-\inlineheadsection{Languages: }{ Python, C++, R, C, LaTeX, Java, Javascript}
-\inlineheadsection{Frameworks: }{PyTorch, TensorFlow, NumPy, Pandas, OpenCV, ROS}
-\inlineheadsection{Tools: }{Git, Docker, Conda, Bazel, CARLA, VIM, GCP, Linux, TensorRT}
-
+\input{skills}
 
 \end{document}
