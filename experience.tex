@@ -34,7 +34,7 @@
 \begin{itemize}
 \item Designed and iterated on multiple experiments for a LiDAR object detection neural network, improving cyclist and pedestrian detections by 43\% and 15\%, respectively. 
 \item Implemented sparse tensor object detectors using \href{https://github.com/NVIDIA/MinkowskiEngine}{Minkowski Engine}, outperforming the baseline model while using 70\% less memory.
-\item Presented a 30-minute research overview to the organization, summarizing research findings of the whole term.
+\item Presented a 30-minute research overview to the organization, communicating 4 months worth of findings and insights to internal stakeholders and leadership.
 \item Integrated confidence predictions into a LiDAR object detection auto-labeling pipeline, allowing human annotators to focus efforts on anomalous and challenging data instances.
 %\item Consistently deployed and monitored experiments on internal GPU clusters, maintaining high GPU utilization throughout the internship.
 \end{itemize}
@@ -74,12 +74,12 @@
 {Sept '20 -- Dec '20}
 {\bodytext{
 \begin{itemize}
-\item Contributed to a customer-facing Python library to quantize and optimize TensorFlow computation graphs.
-\item Designed and implemented Non-Max Suppression for quantized values using only integer operations, allowing
-    object detection pipelines to run 10x faster on-chip.
-\item Experimented with different quantization schemes to improve the mAP of an SSD-ResNet-34 by 5\%.
+\item Contributed to a customer-facing Python library to quantize and optimize TensorFlow computation graphs, towards compiling models for custom hardware.
+\item Designed and implemented Non-Max Suppression for quantized values using only integer operations, eliminating a CPU bottleneck
+    and allowing object detection pipelines to run 10x faster on-chip.
+\item Experimented with different quantization schemes to improve object detection performance of an SSD-ResNet-34 by 5\%.
  \item Implemented a lookup table class to represent arbitrary non-linear functions in a quantized space, 
-     allowing the Python library to support any activation function.
+     allowing the Python library to support dozens of additional model architectures.
  \end{itemize}
 
  }}
