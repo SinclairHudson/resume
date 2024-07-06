@@ -87,3 +87,5 @@
 \newcommand{\nobreakvspace}[1]{\nopagebreak[4]\vspace{#1}\nopagebreak[4]} % A custom vspace command with custom before and after spacing lengths that do not break the page
 
 \newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}} % Defines a horizontal line with some vertical space before and after it
+% A custom section that makes text white, transparent, and very small so that it's only picked up by screen readers
+\newcommand{\invisiblesection}[1]{\section*{\fontsize{1}{2}\selectfont\textcolor{white} {#1}}\vspace{-1em}}
