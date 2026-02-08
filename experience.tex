@@ -4,18 +4,40 @@
 
 \roottitle{Relevant Work Experience} % Top level section
 
+\headedsection
+{\href{http://www.nvidia.com}{NVIDIA}}
+{\textsc{San Francisco, CA}} {
+\headedsubsection % Job title entry for the current employer
+{Machine Learning Engineer}
+{Jan '25 -- Present}
+{\bodytext{
+\begin{itemize}
+\item Trained and tested end-to-end \href{https://www.nvidia.com/en-us/solutions/autonomous-vehicles/alpamayo/}{driving foundation models} for on-car deployment, using a large AWS SLURM cluster to iterate on large-scale experiments.
+\item Developed novel llm-as-a-judge metrics to evaluate chain-of-thought reasoning for autonomous vehicle foundation models. Improved correlation with human judgment by 22\% over existing metrics.
+\item Defined and communicated data labeling requirements to labeling teams for chain-of-thought training data, ensuring human labels were accurate and of high quality.
+\item Introduced a new parametrization for 3D cuboid orientation prediction, reducing roll error by 50\% in a LiDAR object detection model.
+\item Wrote a distributed data sampler to balance object detection training data across multiple variables.
+\item Integrated \href{https://arxiv.org/abs/2304.07193}{DINOv2} image features into the LiDAR object detection model using a novel camera-LiDAR attention mechanism.
+% \item Designed a novel model LiDAR object tracking model that predicts object positions over time (patent pending).
 
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+\end{itemize}
+
+}}
+}
+
+\headedsection
 {\href{http://www.nvidia.com}{NVIDIA}}
 {\textsc{Santa Clara, CA}} {
 \headedsubsection % Job title entry for the current employer
 {Deep Learning Researcher for Autonomous Vehicles}
-{May '24 -- Present}
+{May '24 -- Dec '24}
 {\bodytext{
 \begin{itemize}
-\item Designing and implementing novel self-supervised learning experiments for LiDAR data.
-\item Developing bespoke visualizations and metrics to evaluate self-supervised learning experiments.
-\item Interpreting and communicating results to stakeholders weekly.
+\item Built a research repository in PyTorch for self-supervised learning experiments on LiDAR data.
+\item Implemented and ran experiments for LiDAR variants of \href{https://arxiv.org/abs/2301.08243}{JEPA}, \href{https://arxiv.org/abs/2105.04906}{VICReg}, \href{https://arxiv.org/abs/2111.06377}{MAE}, \href{https://arxiv.org/abs/2104.14294}{DINO}, and world models.
+\item Developed bespoke visualizations and metrics to evaluate self-supervised learning experiments.
+\item Implemented and maintained a pretraining and finetuning pipeline for LiDAR object detection models.
+\item Drafted and submitted a patent application for novel self-supervised learning techniques for LiDAR data in autonomous vehicles.
 
 %\item Consistently deployed and monitored experiments on internal GPU clusters, maintaining high GPU utilization throughout the internship.
 \end{itemize}
@@ -81,8 +103,6 @@
 
 }}
 }
-
-\newpage
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
  {\href{https://www.untether.ai/}{Untether AI}}
