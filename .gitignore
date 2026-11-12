@@ -6,3 +6,6 @@
 *.fls
 *.gz
 *.aux
+
+# Internal work documents — never commit
+Sinclair Hudson Focal Contributions*.pdf
